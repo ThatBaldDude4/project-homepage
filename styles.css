@@ -30,9 +30,17 @@ p {
 }
 
 .project-card {
+    min-height: 50vh;
     border: 2px solid black;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 20px;
+}
+
+.card-screenshot {
+    max-width: 100%;
+    min-height: 80%;
+    flex: 1;
+    background-color: rgb(194, 97, 97);
 }
