@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2,
+h3,
+p {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.headshot-image {
+    max-height: 500px;
+}
+
+.project-card {
+    border: 2px solid black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
