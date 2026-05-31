@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Sansita Swashed", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -14,9 +16,14 @@ main {
     justify-content: center;
 }
 
+footer {
+    background-color: aqua;
+    margin-top: 50px;
+    overflow-wrap: break-word;
+}
+
 h2,
-h3,
-p {
+h3 {
     display: flex;
     justify-content: center;
 }
@@ -31,6 +38,7 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
+    margin: 10px;
 }
 
 p {
@@ -39,23 +47,80 @@ p {
     font-size: 1.5rem;
 }
 
+.name-heading {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+}
+
+.top-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    height: clamp(400px, 500px, 500px);
+}
+
+.cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+}
+
 .headshot-image {
-    max-height: 500px;
+    height: 100%;
+    width: auto;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.8);
 }
 
 .project-card {
+    max-width: 350px;
     min-height: 50vh;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px;
-    box-shadow: 5px 5px black;
+    margin: 0px 20px 100px 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 .card-screenshot {
     max-width: 100%;
-    min-height: 80%;
     flex: 1;
     background-color: rgb(194, 97, 97);
+}
+
+.footer-image {
+    max-width: 100%;
+}
+
+@media (width > 720px) {
+    .project-card {
+        max-width: 350px;
+        flex: 1 1 350px;
+    }
+
+    .projects-heading {
+        display: block;
+    }
+}
+
+@media (width > 720px) {
+    .about-me-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    footer {
+        min-height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-image {
+        max-height: 600px;
+        padding: 20px;
+    }
 }
